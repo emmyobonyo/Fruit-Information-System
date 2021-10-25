@@ -12,9 +12,12 @@ function Navigation() {
     <Router>
       <div>
         <nav className="navigation">
-          <Link to="/">
-            <i className="fas fa-angle-left fa-2x" />
-          </Link>
+          <div className="left-navigation">
+            <Link to="/">
+              <i className="fas fa-angle-left fa-2x" />
+            </Link>
+            <h3>SPAIN</h3>
+          </div>
           <div className="search-bar">
             <input type="text" placeholder="Enter Region" />
             <i className="fas fa-angle-right fa-2x" />
