@@ -1,9 +1,10 @@
 import './App.css';
+import Navigation from './components/Navigation/Navigation';
 
 function App() {
   return (
     <div>
-      <h1>This is a React App</h1>
+      <Navigation />
     </div>
   );
 }
