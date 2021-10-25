@@ -1,10 +1,11 @@
 import React from 'react';
 import {
   BrowserRouter as Router,
-  // Switch,
-  // Route,
+  Switch,
+  Route,
   Link,
 } from 'react-router-dom';
+import DisplayData from '../DisplayData/DisplayData';
 import './Navigation.css';
 
 function Navigation() {
@@ -27,6 +28,11 @@ function Navigation() {
             <i className="fas fa-cog" />
           </div>
         </nav>
+        <Switch>
+          <Route path="/">
+            <DisplayData />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
