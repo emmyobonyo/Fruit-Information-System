@@ -18,3 +18,9 @@
   justify-content: space-between;
   width: 10%;
 }
+
+.left-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
