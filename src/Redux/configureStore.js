@@ -1,14 +1,16 @@
-import { createStore, combineReducers, applyMiddleWare } from 'redux';
+/* eslint-disable import/no-extraneous-dependencies */
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
+import fruitsReducer from './displayData/displayDataSlice';
 
 const reducer = combineReducers({
-
+  fruits: fruitsReducer,
 });
 
 const store = createStore(
   reducer,
-  applyMiddleWare(logger, thunk),
+  applyMiddleware(logger, thunk),
 );
 
 export default store;
