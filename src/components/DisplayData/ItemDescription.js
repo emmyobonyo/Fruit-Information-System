@@ -14,7 +14,7 @@ function ItemDescription({ fruits }) {
   }, []);
   return (
     <div>
-      <Navigation />
+      <Navigation title={fruit} />
       { fruitItem.map((fruit) => (
         <h1 key={fruit.id}>{ fruit.name }</h1>
       )) }
