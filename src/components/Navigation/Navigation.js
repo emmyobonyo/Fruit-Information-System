@@ -6,21 +6,30 @@ import { Link } from 'react-router-dom';
 import { filterFruitData } from '../../Redux/displayData/displayDataSlice';
 import './Navigation.css';
 
-function Navigation({ title }) {
+function Navigation({ title, homePage }) {
   const dispatch = useDispatch();
   const filterFruits = (e) => {
     const input = e.target.value;
     dispatch(filterFruitData(input));
   };
+  Navigation.defaultProps = {
+    title: 'Home',
+  };
   return (
     <div>
       <nav className="navigation">
         <div className="left-navigation">
-          <Link to="/">
-            <i className="fas fa-angle-left fa-2x" />
-          </Link>
-          <h3>FRUITS</h3>
-          <h3>{ title }</h3>
+          { homePage && (
+            <h3>FRUITS</h3>
+          ) }
+          { !homePage && (
+            <>
+              <Link to="/">
+                <i className="fas fa-angle-left fa-2x" />
+              </Link>
+              <h3>{ title }</h3>
+            </>
+          ) }
         </div>
         <div className="search-bar">
           <input type="text" placeholder="Enter Region" onChange={(e) => { filterFruits(e); }} />
@@ -36,7 +45,8 @@ function Navigation({ title }) {
 }
 
 Navigation.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  homePage: PropTypes.arrayOf(PropTypes.array).isRequired,
 };
 
 export default Navigation;
