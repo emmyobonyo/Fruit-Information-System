@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { fetchFruitData } from '../../Redux/displayData/displayDataSlice';
 import Navigation from '../Navigation/Navigation';
 
-function ItemDescription({ fruits, homePage }) {
+function ItemDescription({ fruits }) {
   const fruit = fruits;
   const fruitItem = useSelector((state) => state.fruits);
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ function ItemDescription({ fruits, homePage }) {
   }, []);
   return (
     <div>
-      <Navigation title={fruit} homePage={homePage} />
+      <Navigation title={fruit} />
       { fruitItem.map((fruit) => (
         <h1 key={fruit.id}>{ fruit.name }</h1>
       )) }
@@ -24,7 +24,6 @@ function ItemDescription({ fruits, homePage }) {
 
 ItemDescription.propTypes = {
   fruits: PropTypes.string.isRequired,
-  homePage: PropTypes.arrayOf(PropTypes.bool).isRequired,
 };
 
 export default ItemDescription;

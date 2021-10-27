@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { filterFruitData } from '../../Redux/displayData/displayDataSlice';
 import './Navigation.css';
 
-function Navigation({ title, homePage }) {
+function Navigation({ title }) {
   const dispatch = useDispatch();
   const filterFruits = (e) => {
     const input = e.target.value;
@@ -19,10 +19,10 @@ function Navigation({ title, homePage }) {
     <div>
       <nav className="navigation">
         <div className="left-navigation">
-          { homePage && (
+          { title === 'Home' && (
             <h3>FRUITS</h3>
           ) }
-          { !homePage && (
+          { title !== 'Home' && (
             <>
               <Link to="/">
                 <i className="fas fa-angle-left fa-2x" />
@@ -46,7 +46,6 @@ function Navigation({ title, homePage }) {
 
 Navigation.propTypes = {
   title: PropTypes.string,
-  homePage: PropTypes.arrayOf(PropTypes.array).isRequired,
 };
 
 export default Navigation;

@@ -13,7 +13,7 @@ function DisplayData() {
 
   return (
     <div>
-      <Navigation homePage={fruits.map((fruit) => fruit.homePage)} />
+      <Navigation />
       <h1>Home</h1>
       { fruits.map((fruit) => (
         <div key={fruit.id}>
