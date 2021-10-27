@@ -16,7 +16,7 @@ function App() {
         <Switch>
           { fruits.map((fruit) => (
             <Route path={`/${fruit.name}`} key={fruit.id}>
-              <ItemDescription fruits={fruit.name} homePage={fruit.homePage} />
+              <ItemDescription fruits={fruit.name} />
             </Route>
           ))}
           <Route path="/">
