@@ -14,7 +14,7 @@ function DisplayData() {
   return (
     <div>
       <Navigation />
-      <h1>Fruits</h1>
+      <h1>Home</h1>
       { fruits.map((fruit) => (
         <div key={fruit.id}>
           <Link to={`/${fruit.name}`}>

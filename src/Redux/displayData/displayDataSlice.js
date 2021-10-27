@@ -15,6 +15,7 @@ export const fetchFruitData = (fruit) => async (dispatch) => {
     order: fruitItem.order,
     carbs: fruitItem.nutritions.carbohydrates,
     protein: fruitItem.nutritions.protein,
+    homePage: false,
   });
   dispatch({ type: FETCH_FRUIT_DATA, fruitDetails });
 };
@@ -28,6 +29,7 @@ export const fetchData = () => async (dispatch) => {
       id: fruit.id,
       name: fruit.name,
       family: fruit.family,
+      homePage: true,
     });
   });
   dispatch({ type: FETCH_DATA, newFruits });
