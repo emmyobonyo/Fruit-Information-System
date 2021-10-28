@@ -16,6 +16,7 @@ function ItemDescription({ fruits }) {
   return (
     <div>
       <Navigation title={fruit} />
+      <h3>Fruit Details</h3>
       { fruitItem.map((fruit) => (
         <div key={fruit.id}>
           <img src={`./assets/${fruit.name}.png`} alt={fruit.name} />
