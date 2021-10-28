@@ -43,6 +43,10 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/emmyobonyo/Fruit-Information-System/issues).
 
+## Appreciation
+
+Grateful to [Nelson Sakwa](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) for the design inspiration.
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
