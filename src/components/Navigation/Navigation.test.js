@@ -8,4 +8,4 @@ import store from '../../Redux/configureStore';
 it('should return the navigation', () => {
   const navigation = render(<Router><Provider store={store}><Navigation /></Provider></Router>);
   expect(navigation).toMatchSnapshot();
-})
+});
