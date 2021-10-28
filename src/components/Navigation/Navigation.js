@@ -32,7 +32,7 @@ function Navigation({ title }) {
           ) }
         </div>
         <div className="search-bar">
-          <input type="text" placeholder="Enter Region" onChange={(e) => { filterFruits(e); }} />
+          <input type="text" placeholder="Filter by country" onChange={(e) => { filterFruits(e); }} />
           <i className="fas fa-angle-right fa-2x" />
         </div>
         <div className="right-navigation">
