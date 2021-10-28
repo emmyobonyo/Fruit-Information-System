@@ -14,7 +14,10 @@ function DisplayData() {
   return (
     <div>
       <Navigation />
-      <h1>Home</h1>
+      <div className="all-fruits">
+        <img src="./assets/banana.png" alt="banana" />
+        <h1>All Fruits</h1>
+      </div>
       { fruits.map((fruit) => (
         <div key={fruit.id}>
           <Link to={`/${fruit.name}`}>
