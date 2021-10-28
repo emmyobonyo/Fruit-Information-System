@@ -29,6 +29,7 @@ export const fetchData = () => async (dispatch) => {
       id: fruit.id,
       name: fruit.name,
       family: fruit.family,
+      order: fruit.family,
       homePage: true,
     });
   });

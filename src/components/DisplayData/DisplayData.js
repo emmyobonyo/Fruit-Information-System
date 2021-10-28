@@ -18,14 +18,19 @@ function DisplayData() {
         <img src="./assets/banana.png" alt="banana" />
         <h1>All Fruits</h1>
       </div>
-      { fruits.map((fruit) => (
-        <div key={fruit.id}>
-          <Link to={`/${fruit.name}`}>
-            <h2>{ fruit.name }</h2>
-          </Link>
-          <h4>{ fruit.family }</h4>
-        </div>
-      )) }
+      <ul>
+        { fruits.map((fruit) => (
+          <li key={fruit.id}>
+            <img className="li-image" src={`./assets/${fruit.name}.png`} alt={fruit.name} />
+            <div className="li-text">
+              <Link to={`/${fruit.name}`}>
+                <h4>{ fruit.name }</h4>
+              </Link>
+              <p>{`Family: ${fruit.family}` }</p>
+            </div>
+          </li>
+        )) }
+      </ul>
     </div>
   );
 }

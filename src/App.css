@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #5788E4;
 }
 
 .all-fruits {
@@ -17,4 +18,83 @@ body {
   padding: 30px 0;
   color: white;
   background-color: #5788E4;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  list-style-type: none;
+}
+
+li {
+  background-color: #4268AF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  text-align: right;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li:nth-child(2) {
+  background: #284276;
+}
+
+li:nth-child(3) {
+  background: #284276;
+}
+
+li:nth-child(6) {
+  background: #284276;
+}
+
+li:nth-child(7) {
+  background: #284276;
+}
+
+li:nth-child(10) {
+  background: #284276;
+}
+
+li:nth-child(11) {
+  background: #284276;
+}
+
+li:nth-child(14) {
+  background: #284276;
+}
+
+li:nth-child(15) {
+  background: #284276;
+}
+
+li:nth-child(18) {
+  background: #284276;
+}
+
+li:nth-child(19) {
+  background: #284276;
+}
+
+img {
+  width: 30%;
+  height: 50%;
+}
+
+p {
+  font-size: 10px;
+}
+
+.li-image {
+  width: 40%;
+  height: 100%;
+}
+
+.li-text {
+  width: 60%;
 }
