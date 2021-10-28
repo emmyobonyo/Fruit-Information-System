@@ -15,6 +15,9 @@ export const fetchFruitData = (fruit) => async (dispatch) => {
     order: fruitItem.order,
     carbs: fruitItem.nutritions.carbohydrates,
     protein: fruitItem.nutritions.protein,
+    fat: fruitItem.nutritions.fat,
+    calories: fruitItem.nutritions.calories,
+    sugar: fruitItem.nutritions.sugar,
     homePage: false,
   });
   dispatch({ type: FETCH_FRUIT_DATA, fruitDetails });
