@@ -18,6 +18,10 @@
 
 - [Netlify](https://fruitify-react-redux.netlify.app/)
 
+## Video Walkthrough
+
+- [Loom Video](https://www.loom.com/share/0a4e991e652f4944ab1a48214daa5350)
+
 # Set Up
 ## Clone This Repository
 ```
