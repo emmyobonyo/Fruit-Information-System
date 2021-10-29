@@ -9,7 +9,7 @@ function DisplayData() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchData());
-  });
+  }, []);
 
   return (
     <div>

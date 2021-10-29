@@ -12,7 +12,7 @@ function ItemDescription({ fruits }) {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchFruitData(fruit));
-  });
+  }, []);
   return (
     <div>
       <Navigation title={fruit} />
