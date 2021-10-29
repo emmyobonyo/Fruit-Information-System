@@ -49,7 +49,7 @@ function ItemDescription({ fruits }) {
                 <td>{ fruit.carbs }</td>
               </tr>
               <tr>
-                <th>Protien %</th>
+                <th>Protein %</th>
                 <td>{ fruit.protein }</td>
               </tr>
               <tr>

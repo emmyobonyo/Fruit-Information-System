@@ -25,7 +25,7 @@ Object {
             class="search-bar"
           >
             <input
-              placeholder="Enter Region"
+              placeholder="Filter by country"
               type="text"
             />
             <i
@@ -67,7 +67,7 @@ Object {
           class="search-bar"
         >
           <input
-            placeholder="Enter Region"
+            placeholder="Filter by country"
             type="text"
           />
           <i

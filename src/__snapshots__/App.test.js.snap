@@ -1,92 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should return the details page 1`] = `
+exports[`should return the Apple 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
-    <div>
-      <div>
-        <div>
-          <nav
-            class="navigation"
-          >
-            <div
-              class="left-navigation"
-            >
-              <h3>
-                FRUITS
-              </h3>
-            </div>
-            <div
-              class="search-bar"
-            >
-              <input
-                placeholder="Enter Region"
-                type="text"
-              />
-              <i
-                class="fas fa-angle-right fa-2x"
-              />
-            </div>
-            <div
-              class="right-navigation"
-            >
-              <i
-                class="fas fa-microphone"
-              />
-              <i
-                class="fas fa-cog"
-              />
-            </div>
-          </nav>
-        </div>
-        <h3>
-          Fruit Details
-        </h3>
-      </div>
-    </div>
+    <div />
   </body>,
-  "container": <div>
-    <div>
-      <div>
-        <nav
-          class="navigation"
-        >
-          <div
-            class="left-navigation"
-          >
-            <h3>
-              FRUITS
-            </h3>
-          </div>
-          <div
-            class="search-bar"
-          >
-            <input
-              placeholder="Enter Region"
-              type="text"
-            />
-            <i
-              class="fas fa-angle-right fa-2x"
-            />
-          </div>
-          <div
-            class="right-navigation"
-          >
-            <i
-              class="fas fa-microphone"
-            />
-            <i
-              class="fas fa-cog"
-            />
-          </div>
-        </nav>
-      </div>
-      <h3>
-        Fruit Details
-      </h3>
-    </div>
-  </div>,
+  "container": <div />,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
@@ -167,7 +87,7 @@ Object {
               class="search-bar"
             >
               <input
-                placeholder="Enter Region"
+                placeholder="Filter by country"
                 type="text"
               />
               <i
@@ -186,9 +106,18 @@ Object {
             </div>
           </nav>
         </div>
-        <h1>
-          Home
-        </h1>
+        <div
+          class="all-fruits"
+        >
+          <img
+            alt="banana"
+            src="./assets/banana.png"
+          />
+          <h1>
+            All Fruits
+          </h1>
+        </div>
+        <ul />
       </div>
     </div>
   </body>,
@@ -214,7 +143,7 @@ Object {
             class="search-bar"
           >
             <input
-              placeholder="Enter Region"
+              placeholder="Filter by country"
               type="text"
             />
             <i
@@ -233,9 +162,18 @@ Object {
           </div>
         </nav>
       </div>
-      <h1>
-        Home
-      </h1>
+      <div
+        class="all-fruits"
+      >
+        <img
+          alt="banana"
+          src="./assets/banana.png"
+        />
+        <h1>
+          All Fruits
+        </h1>
+      </div>
+      <ul />
     </div>
   </div>,
   "debug": [Function],
