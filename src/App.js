@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import ItemDescription from './components/DisplayData/ItemDescription';
+import DisplayData from './components/DisplayData/DisplayData';
 import './App.css';
 
 function App() {
+  const fruits = useSelector((state) => state.fruits);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          { fruits.map((fruit) => (
+            <Route path={`/${fruit.name}`} key={fruit.id}>
+              <ItemDescription fruits={fruit.name} />
+            </Route>
+          ))}
+          <Route path="/">
+            <DisplayData />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

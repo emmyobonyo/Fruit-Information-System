@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #5788e4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.all-fruits {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  padding: 30px 0;
+  color: white;
+  background-color: #5788e4;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  list-style-type: none;
+}
+
+li {
+  background-color: #4268af;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5px;
+  color: white;
+  text-align: right;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+li:nth-child(2) {
+  background: #284276;
+}
+
+li:nth-child(3) {
+  background: #284276;
+}
+
+li:nth-child(6) {
+  background: #284276;
+}
+
+li:nth-child(7) {
+  background: #284276;
+}
+
+li:nth-child(10) {
+  background: #284276;
+}
+
+li:nth-child(11) {
+  background: #284276;
+}
+
+li:nth-child(14) {
+  background: #284276;
+}
+
+li:nth-child(15) {
+  background: #284276;
+}
+
+li:nth-child(18) {
+  background: #284276;
+}
+
+li:nth-child(19) {
+  background: #284276;
+}
+
+img {
+  width: 30%;
+  height: 50%;
+}
+
+p {
+  font-size: 10px;
+}
+
+.li-image {
+  width: 40%;
+  height: 100%;
+}
+
+.li-text {
+  width: 60%;
+}
+
+.item-header {
+  text-align: center;
+  padding: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.item-table {
+  text-align: left;
+  display: flex;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table,
+th,
+td {
+  border: 3px solid white;
+  border-collapse: collapse;
+  padding: 15px;
+  width: 80%;
+}
+
+.item-paragraph {
+  text-align: center;
+  color: white;
 }
